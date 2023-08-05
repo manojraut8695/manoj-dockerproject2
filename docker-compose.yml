@@ -1,0 +1,26 @@
+version: '3'
+services:
+  khordha:
+    image: manojraut8695/khordha:latest
+    ports:
+      - "8000:80"
+    deploy:
+      replicas: 3
+  balugaon:
+    image: manojraut8695/balugaon:latest
+    ports:
+      - "8001:80"
+    deploy:
+      replicas: 3
+  chhatrapur:
+    image: manojraut8695/chhatrapur:latest
+    ports:
+      - "8002:80"
+    deploy:
+      replicas: 3
+  kendrapada:
+    image: manojraut8695/kendrapada:latest
+    ports:
+      - "8003:80"
+    deploy:
+      replicas: 3
